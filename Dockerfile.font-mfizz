@@ -1,0 +1,25 @@
+FROM ubuntu:16.04
+
+RUN apt-get update --fix-missing
+RUN apt-get -y install ruby ruby-dev fontforge ttfautohint unzip libz-dev software-properties-common python-software-properties
+RUN apt-get -y install wget 
+
+# get latest build
+RUN wget http://people.mozilla.com/~jkew/woff/woff-code-latest.zip
+RUN unzip -d woff woff-code-latest.zip
+WORKDIR /woff
+RUN apt-get -y install make gcc automake
+RUN make
+RUN mv sfnt2woff /usr/local/bin/
+WORKDIR /
+RUN rm -Rf woff woff-code-latest.zip
+
+RUN gem install fontcustom -v 1.3.8
+
+# finish off with java 8
+RUN add-apt-repository -y ppa:webupd8team/java
+RUN apt-get update
+RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections
+RUN apt-get install -y oracle-java8-installer
+RUN update-java-alternatives -s java-8-oracle
+

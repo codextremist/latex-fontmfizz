@@ -1,0 +1,156 @@
+%% start of file 'fontmfizz.sty'.
+%% Copyright 2014 Kevin Dungs (kevin.dungs@gmail.com).
+%
+% This is inspired by the fontawesome.sty by Xavier Danaux
+% See http://mirror.ctan.org/fonts/fontawesome/
+%
+% This work may be distributed and/or modified under the
+% conditions of the MIT License, available at
+% http://opensource.org/licenses/MIT.
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fontmfizz}[2014/12/23]
+
+\usepackage{fontspec}
+
+\newfontfamily{\MF}{font-mfizz}
+\newcommand*{\mficon}[1]{%
+  {FA\csname mficon@#1\endcsname}}
+
+\expandafter\def\csname mficon@3dprint\endcsname {\symbol{"F100}} \def\mf3dprint {{\MF\csname mficon@3dprint\endcsname}}
+\expandafter\def\csname mficon@alpinelinux\endcsname {\symbol{"F101}} \def\mfAlpinelinux {{\MF\csname mficon@alpinelinux\endcsname}}
+\expandafter\def\csname mficon@angular\endcsname {\symbol{"F102}} \def\mfAngular {{\MF\csname mficon@angular\endcsname}}
+\expandafter\def\csname mficon@angular-alt\endcsname {\symbol{"F103}} \def\mfAngularAlt {{\MF\csname mficon@angular-alt\endcsname}}
+\expandafter\def\csname mficon@antenna\endcsname {\symbol{"F104}} \def\mfAntenna {{\MF\csname mficon@antenna\endcsname}}
+\expandafter\def\csname mficon@apache\endcsname {\symbol{"F105}} \def\mfApache {{\MF\csname mficon@apache\endcsname}}
+\expandafter\def\csname mficon@archlinux\endcsname {\symbol{"F106}} \def\mfArchlinux {{\MF\csname mficon@archlinux\endcsname}}
+\expandafter\def\csname mficon@aws\endcsname {\symbol{"F107}} \def\mfAws {{\MF\csname mficon@aws\endcsname}}
+\expandafter\def\csname mficon@azure\endcsname {\symbol{"F108}} \def\mfAzure {{\MF\csname mficon@azure\endcsname}}
+\expandafter\def\csname mficon@backbone\endcsname {\symbol{"F109}} \def\mfBackbone {{\MF\csname mficon@backbone\endcsname}}
+\expandafter\def\csname mficon@blackberry\endcsname {\symbol{"F10A}} \def\mfBlackberry {{\MF\csname mficon@blackberry\endcsname}}
+\expandafter\def\csname mficon@bomb\endcsname {\symbol{"F10B}} \def\mfBomb {{\MF\csname mficon@bomb\endcsname}}
+\expandafter\def\csname mficon@bootstrap\endcsname {\symbol{"F10C}} \def\mfBootstrap {{\MF\csname mficon@bootstrap\endcsname}}
+\expandafter\def\csname mficon@c\endcsname {\symbol{"F10D}} \def\mfC {{\MF\csname mficon@c\endcsname}}
+\expandafter\def\csname mficon@cassandra\endcsname {\symbol{"F10E}} \def\mfCassandra {{\MF\csname mficon@cassandra\endcsname}}
+\expandafter\def\csname mficon@centos\endcsname {\symbol{"F10F}} \def\mfCentos {{\MF\csname mficon@centos\endcsname}}
+\expandafter\def\csname mficon@clojure\endcsname {\symbol{"F110}} \def\mfClojure {{\MF\csname mficon@clojure\endcsname}}
+\expandafter\def\csname mficon@codeigniter\endcsname {\symbol{"F111}} \def\mfCodeigniter {{\MF\csname mficon@codeigniter\endcsname}}
+\expandafter\def\csname mficon@codepen\endcsname {\symbol{"F112}} \def\mfCodepen {{\MF\csname mficon@codepen\endcsname}}
+\expandafter\def\csname mficon@coffee-bean\endcsname {\symbol{"F113}} \def\mfCoffeeBean {{\MF\csname mficon@coffee-bean\endcsname}}
+\expandafter\def\csname mficon@cplusplus\endcsname {\symbol{"F114}} \def\mfCplusplus {{\MF\csname mficon@cplusplus\endcsname}}
+\expandafter\def\csname mficon@csharp\endcsname {\symbol{"F115}} \def\mfCsharp {{\MF\csname mficon@csharp\endcsname}}
+\expandafter\def\csname mficon@css\endcsname {\symbol{"F116}} \def\mfCss {{\MF\csname mficon@css\endcsname}}
+\expandafter\def\csname mficon@css3\endcsname {\symbol{"F117}} \def\mfCss3 {{\MF\csname mficon@css3\endcsname}}
+\expandafter\def\csname mficon@css3-alt\endcsname {\symbol{"F118}} \def\mfCss3Alt {{\MF\csname mficon@css3-alt\endcsname}}
+\expandafter\def\csname mficon@d3\endcsname {\symbol{"F119}} \def\mfD3 {{\MF\csname mficon@d3\endcsname}}
+\expandafter\def\csname mficon@database\endcsname {\symbol{"F11A}} \def\mfDatabase {{\MF\csname mficon@database\endcsname}}
+\expandafter\def\csname mficon@database-alt\endcsname {\symbol{"F11B}} \def\mfDatabaseAlt {{\MF\csname mficon@database-alt\endcsname}}
+\expandafter\def\csname mficon@database-alt2\endcsname {\symbol{"F11C}} \def\mfDatabaseAlt2 {{\MF\csname mficon@database-alt2\endcsname}}
+\expandafter\def\csname mficon@debian\endcsname {\symbol{"F11D}} \def\mfDebian {{\MF\csname mficon@debian\endcsname}}
+\expandafter\def\csname mficon@docker\endcsname {\symbol{"F11E}} \def\mfDocker {{\MF\csname mficon@docker\endcsname}}
+\expandafter\def\csname mficon@dreamhost\endcsname {\symbol{"F11F}} \def\mfDreamhost {{\MF\csname mficon@dreamhost\endcsname}}
+\expandafter\def\csname mficon@elixir\endcsname {\symbol{"F120}} \def\mfElixir {{\MF\csname mficon@elixir\endcsname}}
+\expandafter\def\csname mficon@elm\endcsname {\symbol{"F121}} \def\mfElm {{\MF\csname mficon@elm\endcsname}}
+\expandafter\def\csname mficon@erlang\endcsname {\symbol{"F122}} \def\mfErlang {{\MF\csname mficon@erlang\endcsname}}
+\expandafter\def\csname mficon@exherbo\endcsname {\symbol{"F123}} \def\mfExherbo {{\MF\csname mficon@exherbo\endcsname}}
+\expandafter\def\csname mficon@fedora\endcsname {\symbol{"F124}} \def\mfFedora {{\MF\csname mficon@fedora\endcsname}}
+\expandafter\def\csname mficon@fire-alt\endcsname {\symbol{"F125}} \def\mfFireAlt {{\MF\csname mficon@fire-alt\endcsname}}
+\expandafter\def\csname mficon@freebsd\endcsname {\symbol{"F126}} \def\mfFreebsd {{\MF\csname mficon@freebsd\endcsname}}
+\expandafter\def\csname mficon@freecodecamp\endcsname {\symbol{"F127}} \def\mfFreecodecamp {{\MF\csname mficon@freecodecamp\endcsname}}
+\expandafter\def\csname mficon@gentoo\endcsname {\symbol{"F128}} \def\mfGentoo {{\MF\csname mficon@gentoo\endcsname}}
+\expandafter\def\csname mficon@ghost\endcsname {\symbol{"F129}} \def\mfGhost {{\MF\csname mficon@ghost\endcsname}}
+\expandafter\def\csname mficon@git\endcsname {\symbol{"F12A}} \def\mfGit {{\MF\csname mficon@git\endcsname}}
+\expandafter\def\csname mficon@gnome\endcsname {\symbol{"F12B}} \def\mfGnome {{\MF\csname mficon@gnome\endcsname}}
+\expandafter\def\csname mficon@go\endcsname {\symbol{"F12C}} \def\mfGo {{\MF\csname mficon@go\endcsname}}
+\expandafter\def\csname mficon@go-alt\endcsname {\symbol{"F12D}} \def\mfGoAlt {{\MF\csname mficon@go-alt\endcsname}}
+\expandafter\def\csname mficon@google\endcsname {\symbol{"F12E}} \def\mfGoogle {{\MF\csname mficon@google\endcsname}}
+\expandafter\def\csname mficon@google-alt\endcsname {\symbol{"F12F}} \def\mfGoogleAlt {{\MF\csname mficon@google-alt\endcsname}}
+\expandafter\def\csname mficon@google-code\endcsname {\symbol{"F130}} \def\mfGoogleCode {{\MF\csname mficon@google-code\endcsname}}
+\expandafter\def\csname mficon@google-developers\endcsname {\symbol{"F131}} \def\mfGoogleDevelopers {{\MF\csname mficon@google-developers\endcsname}}
+\expandafter\def\csname mficon@gradle\endcsname {\symbol{"F132}} \def\mfGradle {{\MF\csname mficon@gradle\endcsname}}
+\expandafter\def\csname mficon@grails\endcsname {\symbol{"F133}} \def\mfGrails {{\MF\csname mficon@grails\endcsname}}
+\expandafter\def\csname mficon@grails-alt\endcsname {\symbol{"F134}} \def\mfGrailsAlt {{\MF\csname mficon@grails-alt\endcsname}}
+\expandafter\def\csname mficon@grunt\endcsname {\symbol{"F135}} \def\mfGrunt {{\MF\csname mficon@grunt\endcsname}}
+\expandafter\def\csname mficon@gulp\endcsname {\symbol{"F136}} \def\mfGulp {{\MF\csname mficon@gulp\endcsname}}
+\expandafter\def\csname mficon@gulp-alt\endcsname {\symbol{"F137}} \def\mfGulpAlt {{\MF\csname mficon@gulp-alt\endcsname}}
+\expandafter\def\csname mficon@hadoop\endcsname {\symbol{"F138}} \def\mfHadoop {{\MF\csname mficon@hadoop\endcsname}}
+\expandafter\def\csname mficon@haskell\endcsname {\symbol{"F139}} \def\mfHaskell {{\MF\csname mficon@haskell\endcsname}}
+\expandafter\def\csname mficon@heroku\endcsname {\symbol{"F13A}} \def\mfHeroku {{\MF\csname mficon@heroku\endcsname}}
+\expandafter\def\csname mficon@html\endcsname {\symbol{"F13B}} \def\mfHtml {{\MF\csname mficon@html\endcsname}}
+\expandafter\def\csname mficon@html5\endcsname {\symbol{"F13C}} \def\mfHtml5 {{\MF\csname mficon@html5\endcsname}}
+\expandafter\def\csname mficon@html5-alt\endcsname {\symbol{"F13D}} \def\mfHtml5Alt {{\MF\csname mficon@html5-alt\endcsname}}
+\expandafter\def\csname mficon@iphone\endcsname {\symbol{"F13E}} \def\mfIphone {{\MF\csname mficon@iphone\endcsname}}
+\expandafter\def\csname mficon@java\endcsname {\symbol{"F13F}} \def\mfJava {{\MF\csname mficon@java\endcsname}}
+\expandafter\def\csname mficon@java-bold\endcsname {\symbol{"F140}} \def\mfJavaBold {{\MF\csname mficon@java-bold\endcsname}}
+\expandafter\def\csname mficon@java-duke\endcsname {\symbol{"F141}} \def\mfJavaDuke {{\MF\csname mficon@java-duke\endcsname}}
+\expandafter\def\csname mficon@javascript\endcsname {\symbol{"F142}} \def\mfJavascript {{\MF\csname mficon@javascript\endcsname}}
+\expandafter\def\csname mficon@javascript-alt\endcsname {\symbol{"F143}} \def\mfJavascriptAlt {{\MF\csname mficon@javascript-alt\endcsname}}
+\expandafter\def\csname mficon@jetty\endcsname {\symbol{"F144}} \def\mfJetty {{\MF\csname mficon@jetty\endcsname}}
+\expandafter\def\csname mficon@jquery\endcsname {\symbol{"F145}} \def\mfJquery {{\MF\csname mficon@jquery\endcsname}}
+\expandafter\def\csname mficon@kde\endcsname {\symbol{"F146}} \def\mfKde {{\MF\csname mficon@kde\endcsname}}
+\expandafter\def\csname mficon@laravel\endcsname {\symbol{"F147}} \def\mfLaravel {{\MF\csname mficon@laravel\endcsname}}
+\expandafter\def\csname mficon@line-graph\endcsname {\symbol{"F148}} \def\mfLineGraph {{\MF\csname mficon@line-graph\endcsname}}
+\expandafter\def\csname mficon@linux-mint\endcsname {\symbol{"F149}} \def\mfLinuxMint {{\MF\csname mficon@linux-mint\endcsname}}
+\expandafter\def\csname mficon@looking\endcsname {\symbol{"F14A}} \def\mfLooking {{\MF\csname mficon@looking\endcsname}}
+\expandafter\def\csname mficon@magento\endcsname {\symbol{"F14B}} \def\mfMagento {{\MF\csname mficon@magento\endcsname}}
+\expandafter\def\csname mficon@mariadb\endcsname {\symbol{"F14C}} \def\mfMariadb {{\MF\csname mficon@mariadb\endcsname}}
+\expandafter\def\csname mficon@maven\endcsname {\symbol{"F14D}} \def\mfMaven {{\MF\csname mficon@maven\endcsname}}
+\expandafter\def\csname mficon@microscope\endcsname {\symbol{"F14E}} \def\mfMicroscope {{\MF\csname mficon@microscope\endcsname}}
+\expandafter\def\csname mficon@mobile-device\endcsname {\symbol{"F14F}} \def\mfMobileDevice {{\MF\csname mficon@mobile-device\endcsname}}
+\expandafter\def\csname mficon@mobile-phone-alt\endcsname {\symbol{"F150}} \def\mfMobilePhoneAlt {{\MF\csname mficon@mobile-phone-alt\endcsname}}
+\expandafter\def\csname mficon@mobile-phone-broadcast\endcsname {\symbol{"F151}} \def\mfMobilePhoneBroadcast {{\MF\csname mficon@mobile-phone-broadcast\endcsname}}
+\expandafter\def\csname mficon@mongodb\endcsname {\symbol{"F152}} \def\mfMongodb {{\MF\csname mficon@mongodb\endcsname}}
+\expandafter\def\csname mficon@mssql\endcsname {\symbol{"F153}} \def\mfMssql {{\MF\csname mficon@mssql\endcsname}}
+\expandafter\def\csname mficon@mysql\endcsname {\symbol{"F154}} \def\mfMysql {{\MF\csname mficon@mysql\endcsname}}
+\expandafter\def\csname mficon@mysql-alt\endcsname {\symbol{"F155}} \def\mfMysqlAlt {{\MF\csname mficon@mysql-alt\endcsname}}
+\expandafter\def\csname mficon@netbsd\endcsname {\symbol{"F156}} \def\mfNetbsd {{\MF\csname mficon@netbsd\endcsname}}
+\expandafter\def\csname mficon@nginx\endcsname {\symbol{"F157}} \def\mfNginx {{\MF\csname mficon@nginx\endcsname}}
+\expandafter\def\csname mficon@nginx-alt\endcsname {\symbol{"F158}} \def\mfNginxAlt {{\MF\csname mficon@nginx-alt\endcsname}}
+\expandafter\def\csname mficon@nginx-alt2\endcsname {\symbol{"F159}} \def\mfNginxAlt2 {{\MF\csname mficon@nginx-alt2\endcsname}}
+\expandafter\def\csname mficon@nodejs\endcsname {\symbol{"F15A}} \def\mfNodejs {{\MF\csname mficon@nodejs\endcsname}}
+\expandafter\def\csname mficon@npm\endcsname {\symbol{"F15B}} \def\mfNpm {{\MF\csname mficon@npm\endcsname}}
+\expandafter\def\csname mficon@objc\endcsname {\symbol{"F15C}} \def\mfObjc {{\MF\csname mficon@objc\endcsname}}
+\expandafter\def\csname mficon@openshift\endcsname {\symbol{"F15D}} \def\mfOpenshift {{\MF\csname mficon@openshift\endcsname}}
+\expandafter\def\csname mficon@oracle\endcsname {\symbol{"F15E}} \def\mfOracle {{\MF\csname mficon@oracle\endcsname}}
+\expandafter\def\csname mficon@oracle-alt\endcsname {\symbol{"F15F}} \def\mfOracleAlt {{\MF\csname mficon@oracle-alt\endcsname}}
+\expandafter\def\csname mficon@osx\endcsname {\symbol{"F160}} \def\mfOsx {{\MF\csname mficon@osx\endcsname}}
+\expandafter\def\csname mficon@perl\endcsname {\symbol{"F161}} \def\mfPerl {{\MF\csname mficon@perl\endcsname}}
+\expandafter\def\csname mficon@phone-alt\endcsname {\symbol{"F162}} \def\mfPhoneAlt {{\MF\csname mficon@phone-alt\endcsname}}
+\expandafter\def\csname mficon@phone-gap\endcsname {\symbol{"F163}} \def\mfPhoneGap {{\MF\csname mficon@phone-gap\endcsname}}
+\expandafter\def\csname mficon@phone-retro\endcsname {\symbol{"F164}} \def\mfPhoneRetro {{\MF\csname mficon@phone-retro\endcsname}}
+\expandafter\def\csname mficon@php\endcsname {\symbol{"F165}} \def\mfPhp {{\MF\csname mficon@php\endcsname}}
+\expandafter\def\csname mficon@php-alt\endcsname {\symbol{"F166}} \def\mfPhpAlt {{\MF\csname mficon@php-alt\endcsname}}
+\expandafter\def\csname mficon@playframework\endcsname {\symbol{"F167}} \def\mfPlayframework {{\MF\csname mficon@playframework\endcsname}}
+\expandafter\def\csname mficon@playframework-alt\endcsname {\symbol{"F168}} \def\mfPlayframeworkAlt {{\MF\csname mficon@playframework-alt\endcsname}}
+\expandafter\def\csname mficon@plone\endcsname {\symbol{"F169}} \def\mfPlone {{\MF\csname mficon@plone\endcsname}}
+\expandafter\def\csname mficon@postgres\endcsname {\symbol{"F16A}} \def\mfPostgres {{\MF\csname mficon@postgres\endcsname}}
+\expandafter\def\csname mficon@postgres-alt\endcsname {\symbol{"F16B}} \def\mfPostgresAlt {{\MF\csname mficon@postgres-alt\endcsname}}
+\expandafter\def\csname mficon@python\endcsname {\symbol{"F16C}} \def\mfPython {{\MF\csname mficon@python\endcsname}}
+\expandafter\def\csname mficon@raspberrypi\endcsname {\symbol{"F16D}} \def\mfRaspberrypi {{\MF\csname mficon@raspberrypi\endcsname}}
+\expandafter\def\csname mficon@reactjs\endcsname {\symbol{"F16E}} \def\mfReactjs {{\MF\csname mficon@reactjs\endcsname}}
+\expandafter\def\csname mficon@redhat\endcsname {\symbol{"F16F}} \def\mfRedhat {{\MF\csname mficon@redhat\endcsname}}
+\expandafter\def\csname mficon@redis\endcsname {\symbol{"F170}} \def\mfRedis {{\MF\csname mficon@redis\endcsname}}
+\expandafter\def\csname mficon@ruby\endcsname {\symbol{"F171}} \def\mfRuby {{\MF\csname mficon@ruby\endcsname}}
+\expandafter\def\csname mficon@ruby-on-rails\endcsname {\symbol{"F172}} \def\mfRubyOnRails {{\MF\csname mficon@ruby-on-rails\endcsname}}
+\expandafter\def\csname mficon@ruby-on-rails-alt\endcsname {\symbol{"F173}} \def\mfRubyOnRailsAlt {{\MF\csname mficon@ruby-on-rails-alt\endcsname}}
+\expandafter\def\csname mficon@rust\endcsname {\symbol{"F174}} \def\mfRust {{\MF\csname mficon@rust\endcsname}}
+\expandafter\def\csname mficon@sass\endcsname {\symbol{"F175}} \def\mfSass {{\MF\csname mficon@sass\endcsname}}
+\expandafter\def\csname mficon@satellite\endcsname {\symbol{"F176}} \def\mfSatellite {{\MF\csname mficon@satellite\endcsname}}
+\expandafter\def\csname mficon@scala\endcsname {\symbol{"F177}} \def\mfScala {{\MF\csname mficon@scala\endcsname}}
+\expandafter\def\csname mficon@scala-alt\endcsname {\symbol{"F178}} \def\mfScalaAlt {{\MF\csname mficon@scala-alt\endcsname}}
+\expandafter\def\csname mficon@script\endcsname {\symbol{"F179}} \def\mfScript {{\MF\csname mficon@script\endcsname}}
+\expandafter\def\csname mficon@script-alt\endcsname {\symbol{"F17A}} \def\mfScriptAlt {{\MF\csname mficon@script-alt\endcsname}}
+\expandafter\def\csname mficon@shell\endcsname {\symbol{"F17B}} \def\mfShell {{\MF\csname mficon@shell\endcsname}}
+\expandafter\def\csname mficon@sitefinity\endcsname {\symbol{"F17C}} \def\mfSitefinity {{\MF\csname mficon@sitefinity\endcsname}}
+\expandafter\def\csname mficon@solaris\endcsname {\symbol{"F17D}} \def\mfSolaris {{\MF\csname mficon@solaris\endcsname}}
+\expandafter\def\csname mficon@splatter\endcsname {\symbol{"F17E}} \def\mfSplatter {{\MF\csname mficon@splatter\endcsname}}
+\expandafter\def\csname mficon@spring\endcsname {\symbol{"F17F}} \def\mfSpring {{\MF\csname mficon@spring\endcsname}}
+\expandafter\def\csname mficon@suse\endcsname {\symbol{"F180}} \def\mfSuse {{\MF\csname mficon@suse\endcsname}}
+\expandafter\def\csname mficon@svg\endcsname {\symbol{"F181}} \def\mfSvg {{\MF\csname mficon@svg\endcsname}}
+\expandafter\def\csname mficon@symfony\endcsname {\symbol{"F182}} \def\mfSymfony {{\MF\csname mficon@symfony\endcsname}}
+\expandafter\def\csname mficon@tomcat\endcsname {\symbol{"F183}} \def\mfTomcat {{\MF\csname mficon@tomcat\endcsname}}
+\expandafter\def\csname mficon@ubuntu\endcsname {\symbol{"F184}} \def\mfUbuntu {{\MF\csname mficon@ubuntu\endcsname}}
+\expandafter\def\csname mficon@unity\endcsname {\symbol{"F185}} \def\mfUnity {{\MF\csname mficon@unity\endcsname}}
+\expandafter\def\csname mficon@wireless\endcsname {\symbol{"F186}} \def\mfWireless {{\MF\csname mficon@wireless\endcsname}}
+\expandafter\def\csname mficon@wordpress\endcsname {\symbol{"F187}} \def\mfWordpress {{\MF\csname mficon@wordpress\endcsname}}
+\expandafter\def\csname mficon@x11\endcsname {\symbol{"F188}} \def\mfX11 {{\MF\csname mficon@x11\endcsname}}
